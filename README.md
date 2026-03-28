@@ -29,3 +29,10 @@ on_uploading = ["Sending loot to {to} ...", "Uploading goodies to {to} ..."]
 ```
 
 3. Restart Pwnagotchi.
+
+4. Check out my other plugins
+- Pwnagotchi-Nomagotchi-Food-Plugin
+- Pwnagotchi-TrashTalk-Custom-Phrases-Plugin
+- Pwnagotchi-EXPv3-Plugin
+- Pwnagotchi-WebSSH-Plugin
+https://github.com/FourEightZer0
