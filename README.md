@@ -23,7 +23,7 @@ enabled = true
 on_starting = ["Systems nominal.", "Boot sequence complete.", "Ready for trouble."]
 on_assoc = ["Yo {what}, let me in.", "Oh hi there {what}.", "Knocking on {what}."]
 on_deauth = ["Bye Felicia {mac}.", "Thats enough WIFI for you {mac}.", "Oops, BYE {mac}."]
-on_handshakes = ["Got emmm! Captured {num} fresh handshake{plural}.", "Yess! Captured {num} handshake{plural}.", "Wooo! {num} handshake{plural}."]
+on_handshakes = ["Got emmm! Captured {num} handshake{plural}.", "I'll be talking that thanks...", "Yoink. {num} handshake{plural} acquired."]
 on_waiting = ["Time for a nap. {secs}s...", "Being suspicious for {secs}s ..."]
 on_uploading = ["Sending loot to {to} ...", "Uploading goodies to {to} ..."]
 ```
