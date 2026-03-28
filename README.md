@@ -16,43 +16,16 @@ A Pwnagotchi plugin that Allows you to easily customize your Pwnagotchi's phrase
 2. Add the following to your `config.toml`:
 
 ```toml
-main.custom_plugins = "/etc/pwnagotchi/custom-plugins"
-main.plugins.trashtalk.enabled = true
+[main.plugins.trashtalk]
+enabled = true
 
-main.plugins.trashtalk.phrases.on_starting = [
-  "Tiny gremlin online.",
-  "Boot sequence complete.",
-  "Ready to sniff trouble."
-]
-
-main.plugins.trashtalk.phrases.on_assoc = [
-  "Yo {what}, let me in.",
-  "Associating with {what}.",
-  "Knocking on {what}."
-]
-
-main.plugins.trashtalk.phrases.on_deauth = [
-  "Bye {mac}.",
-  "Removing Wi-Fi privileges for {mac}.",
-  "Disconnecting {mac}."
-]
-
-main.plugins.trashtalk.phrases.on_handshakes = [
-  "Nice, got {num} handshake{plural}.",
-  "Captured {num} fresh handshake{plural}.",
-  "That worked: {num} handshake{plural}."
-]
-
-main.plugins.trashtalk.phrases.on_waiting = [
-  "Lurking for {secs}s ...",
-  "Being suspicious for {secs}s ..."
-]
-
-main.plugins.trashtalk.phrases.on_uploading = [
-  "Sending loot to {to} ...",
-  "Uploading goodies to {to} ..."
-]
-
+[main.plugins.trashtalk.phrases]
+on_starting = ["Systems nominal.", "Boot sequence complete.", "Ready for trouble."]
+on_assoc = ["Yo {what}, let me in.", "Oh hi there {what}.", "Knocking on {what}."]
+on_deauth = ["Bye Felicia {mac}.", "Thats enough WIFI for you {mac}.", "Oops, BYE {mac}."]
+on_handshakes = ["Got emmm! Captured {num} fresh handshake{plural}.", "Yess! Captured {num} handshake{plural}.", "Wooo! {num} handshake{plural}."]
+on_waiting = ["Time for a nap. {secs}s...", "Being suspicious for {secs}s ..."]
+on_uploading = ["Sending loot to {to} ...", "Uploading goodies to {to} ..."]
 ```
 
 3. Restart Pwnagotchi.
